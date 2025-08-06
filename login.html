@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="flex items-center justify-center h-screen bg-gray-100">
+  <div class="bg-white p-8 rounded shadow-md w-96 space-y-4">
+    <h2 class="text-2xl font-bold text-center">Login</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" class="w-full border px-3 py-2 rounded" placeholder="Email" required />
+      <input type="password" id="loginPassword" class="w-full border px-3 py-2 rounded" placeholder="Password"
+        required />
+      <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded">Login</button>
+    </form>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/auth.js"></script>
+
+</body>
+
+</html>

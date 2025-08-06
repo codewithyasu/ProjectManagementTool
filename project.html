@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project Tasks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="p-6 bg-gray-100">
+  <a href="dashboard.html" class="text-blue-500 underline mb-4 inline-block">← Back to Dashboard</a>
+  <h1 id="projectName" class="text-3xl font-bold mb-6">Project</h1>
+
+  <div class="flex gap-4 mb-6">
+    <input id="taskTitle" type="text" placeholder="Task title" class="border px-3 py-2 w-1/3" />
+    <input id="taskDeadline" type="date" class="border px-3 py-2 w-1/4" />
+    <button id="addTaskBtn" class="bg-blue-500 text-white px-4 py-2 rounded">Add Task</button>
+  </div>
+
+  <div id="taskList" class="space-y-4"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/tasks.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-6 bg-gray-100">
+  <h1 class="text-3xl font-bold mb-4">Your Projects</h1>
+
+  <div class="mb-4">
+    <input id="projectInput" type="text" class="border px-3 py-2" placeholder="New Project Name">
+    <button id="addProjectBtn" class="bg-blue-500 text-white px-4 py-2 rounded">Add</button>
+  </div>
+
+  <ul id="projectList" class="space-y-2"></ul>
+
+  
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script src="js/firebase.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+
+</body>
+</html>
